@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+
+.main {
+    background-image: url(./assets/images/background.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    width: 98.5vw;
+    height: 80vh;
+    position: relative;
+    padding:0;
+
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    max-width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+nav img {
+    width: 120px;
+    position: relative;
+    z-index: 2;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    font-family: 'Martel Sans';
+    height: 90%;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding:0 32px;
+    
+}
+.text> :nth-child(1){
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+.text> :nth-child(2){
+    font-size: 1.5rem;
+    font-weight:400;
+    text-align: center;
+}
+.text> :nth-child(3){
+    font-size: 1.2rem;
+    font-weight:400;
+    text-align: center;
+}
+.seperate{
+    height:6px;
+    background-color: rgb(59, 57, 57);
+}
+.btn , .main input{
+    padding:8px 12px;
+    font-weight: bold;
+    background-color: white;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.btn-red {
+    background-color: red;
+    color:white;
+    border:none;
+    font-size: 20px;
+    border-radius:4px;
+
+}
+.btn-red-sm{
+    background-color: red;
+    color:white;
+    border:none;
+    padding: 6px 20px;
+}
+.btn-lang{
+    padding:2px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding:6px 20px;
+}
+.main input{
+   
+    background-color: black;
+    opacity: 0.6;
+    border:2px solid rgb(255, 255, 255);
+    padding:12px 50px 12px 10px;
+    cursor:text;
+    color:white;
+    
+}
+.main .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6px;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width:70vw;
+    color:white;
+    margin:auto;
+    min-width: 70vw;
+}
+.secImg{
+    display: flex;
+    position:relative;
+    width:35vw;
+    justify-content: center;
+    align-items: center;
+
+}
+.secImg img{
+    width:100%;
+    position:relative;
+    z-index:2;
+}
+.secImg video{
+    position: absolute;
+    width:80%;
+    
+}
+
+.second .text:nth-child(1){
+    font-size:32px;
+    font-weight: 700;
+    
+}
+.second .text:nth-child(2){
+    font-size:18px;
+    font-weight: 400;
+}
+.main section{
+    padding-top: 12em;
+}
+
+.fourth video{
+    position:absolute;
+    width:60%;
+    top:5vh;
+    
+
+}
+@media screen and (max-width:1200px) {
+    .second{
+        display: flex;
+        flex-direction: column;
+    }
+    .main section{
+        padding-top: 2em;
+    }
+
+}
